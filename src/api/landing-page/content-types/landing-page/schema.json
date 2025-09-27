@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "LandingPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "component",
+      "component": "home.header",
+      "repeatable": false
+    },
+    "About": {
+      "type": "component",
+      "component": "home.about",
+      "repeatable": false
+    },
+    "Testimonials": {
+      "type": "component",
+      "component": "home.testimonials",
+      "repeatable": false
+    },
+    "Supporters": {
+      "type": "component",
+      "component": "home.supporters",
+      "repeatable": false
+    },
+    "Contact": {
+      "type": "component",
+      "component": "home.contact",
+      "repeatable": false
+    },
+    "Partnerships": {
+      "type": "component",
+      "component": "home.partnerships",
+      "repeatable": false
+    },
+    "Leadership": {
+      "type": "component",
+      "component": "home.leadership",
+      "repeatable": false
+    }
+  }
+}

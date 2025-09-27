@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_home_abouts",
+  "info": {
+    "displayName": "About"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "MissionVisionValues": {
+      "type": "component",
+      "component": "home.mission-vision-values",
+      "repeatable": true
+    },
+    "Schedule": {
+      "type": "component",
+      "component": "home.schedule",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

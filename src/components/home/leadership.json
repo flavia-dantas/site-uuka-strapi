@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_leaderships",
+  "info": {
+    "displayName": "Leadership"
+  },
+  "options": {},
+  "attributes": {
+    "LeadershipCard": {
+      "type": "component",
+      "component": "home.leadership-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

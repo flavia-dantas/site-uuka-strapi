@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_partnerships",
+  "info": {
+    "displayName": "Partnerships"
+  },
+  "options": {},
+  "attributes": {
+    "ButtonLabel": {
+      "type": "string"
+    },
+    "ButtonLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

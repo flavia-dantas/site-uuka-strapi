@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_supporters",
+  "info": {
+    "displayName": "Supporters"
+  },
+  "options": {},
+  "attributes": {
+    "SupportersCard": {
+      "type": "component",
+      "component": "home.supporters-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

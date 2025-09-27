@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_contacts",
+  "info": {
+    "displayName": "Contact"
+  },
+  "options": {},
+  "attributes": {
+    "ButtonLabel": {
+      "type": "string"
+    },
+    "ButtonLink": {
+      "type": "string"
+    },
+    "ContactList": {
+      "type": "component",
+      "component": "home.contact-list",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
