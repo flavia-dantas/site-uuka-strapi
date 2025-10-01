@@ -82,7 +82,6 @@ export interface HomeMissionVisionValues extends Struct.ComponentSchema {
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    title: Schema.Attribute.String;
   };
 }
 
@@ -116,17 +115,10 @@ export interface HomeSupporters extends Struct.ComponentSchema {
     displayName: 'Supporters';
   };
   attributes: {
-    SupportersCard: Schema.Attribute.Component<'home.supporters-card', true>;
-  };
-}
-
-export interface HomeSupportersCard extends Struct.ComponentSchema {
-  collectionName: 'components_home_supporters_cards';
-  info: {
-    displayName: 'SupportersCard';
-  };
-  attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageLogo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
   };
 }
 
@@ -177,7 +169,6 @@ declare module '@strapi/strapi' {
       'home.partnerships': HomePartnerships;
       'home.schedule': HomeSchedule;
       'home.supporters': HomeSupporters;
-      'home.supporters-card': HomeSupportersCard;
       'home.testimonials': HomeTestimonials;
       'home.testimonials-card': HomeTestimonialsCard;
     }
