@@ -6,10 +6,7 @@ export interface HomeAbout extends Struct.ComponentSchema {
     displayName: 'About';
   };
   attributes: {
-    image: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
+    imageHero: Schema.Attribute.Component<'home.image-hero', true>;
     MissionVisionValues: Schema.Attribute.Component<
       'home.mission-vision-values',
       true
@@ -53,6 +50,17 @@ export interface HomeHeader extends Struct.ComponentSchema {
   };
 }
 
+export interface HomeImageHero extends Struct.ComponentSchema {
+  collectionName: 'components_home_image_heroes';
+  info: {
+    displayName: 'imageHero';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    overlayText: Schema.Attribute.RichText;
+  };
+}
+
 export interface HomeLeadership extends Struct.ComponentSchema {
   collectionName: 'components_home_leaderships';
   info: {
@@ -69,6 +77,7 @@ export interface HomeLeadershipCard extends Struct.ComponentSchema {
     displayName: 'LeadershipCard';
   };
   attributes: {
+    isColor: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     name: Schema.Attribute.String;
     photo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     position: Schema.Attribute.String;
@@ -163,6 +172,7 @@ declare module '@strapi/strapi' {
       'home.contact': HomeContact;
       'home.contact-list': HomeContactList;
       'home.header': HomeHeader;
+      'home.image-hero': HomeImageHero;
       'home.leadership': HomeLeadership;
       'home.leadership-card': HomeLeadershipCard;
       'home.mission-vision-values': HomeMissionVisionValues;

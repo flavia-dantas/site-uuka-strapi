@@ -20,6 +20,10 @@
         "videos",
         "audios"
       ]
+    },
+    "isColor": {
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

@@ -5,15 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "image": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "imageHero": {
+      "type": "component",
+      "component": "home.image-hero",
+      "repeatable": true
     },
     "MissionVisionValues": {
       "type": "component",
