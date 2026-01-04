@@ -7,6 +7,7 @@ export interface HomeAbout extends Struct.ComponentSchema {
   };
   attributes: {
     imageHero: Schema.Attribute.Component<'home.image-hero', true>;
+    impact: Schema.Attribute.Component<'home.impact', false>;
     MissionVisionValues: Schema.Attribute.Component<
       'home.mission-vision-values',
       true
@@ -58,6 +59,23 @@ export interface HomeImageHero extends Struct.ComponentSchema {
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     overlayText: Schema.Attribute.RichText;
+  };
+}
+
+export interface HomeImpact extends Struct.ComponentSchema {
+  collectionName: 'components_home_impacts';
+  info: {
+    displayName: 'Impact';
+  };
+  attributes: {
+    currentCycleNumber: Schema.Attribute.Integer;
+    impactMapImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    menteesInCurrentCycle: Schema.Attribute.Integer;
+    mentorsTrained: Schema.Attribute.Integer;
+    totalCyclesCompleted: Schema.Attribute.Integer;
+    totalMentoringHours: Schema.Attribute.Decimal;
   };
 }
 
@@ -173,6 +191,7 @@ declare module '@strapi/strapi' {
       'home.contact-list': HomeContactList;
       'home.header': HomeHeader;
       'home.image-hero': HomeImageHero;
+      'home.impact': HomeImpact;
       'home.leadership': HomeLeadership;
       'home.leadership-card': HomeLeadershipCard;
       'home.mission-vision-values': HomeMissionVisionValues;

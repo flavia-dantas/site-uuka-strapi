@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_impacts",
+  "info": {
+    "displayName": "Impact"
+  },
+  "options": {},
+  "attributes": {
+    "mentorsTrained": {
+      "type": "integer"
+    },
+    "menteesInCurrentCycle": {
+      "type": "integer"
+    },
+    "totalMentoringHours": {
+      "type": "decimal"
+    },
+    "totalCyclesCompleted": {
+      "type": "integer"
+    },
+    "impactMapImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "currentCycleNumber": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
