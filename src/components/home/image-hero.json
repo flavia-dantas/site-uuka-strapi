@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_home_supporters_cards",
+  "collectionName": "components_home_image_heroes",
   "info": {
-    "displayName": "SupportersCard"
+    "displayName": "imageHero"
   },
   "options": {},
   "attributes": {
@@ -14,6 +14,9 @@
         "videos",
         "audios"
       ]
+    },
+    "overlayText": {
+      "type": "richtext"
     }
   },
   "config": {}

@@ -5,10 +5,15 @@
   },
   "options": {},
   "attributes": {
-    "SupportersCard": {
-      "type": "component",
-      "component": "home.supporters-card",
-      "repeatable": true
+    "imageLogo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

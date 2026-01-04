@@ -5,15 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "image": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "imageHero": {
+      "type": "component",
+      "component": "home.image-hero",
+      "repeatable": true
     },
     "MissionVisionValues": {
       "type": "component",
@@ -23,6 +18,11 @@
     "Schedule": {
       "type": "component",
       "component": "home.schedule",
+      "repeatable": false
+    },
+    "impact": {
+      "type": "component",
+      "component": "home.impact",
       "repeatable": false
     }
   },
