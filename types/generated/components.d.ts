@@ -75,7 +75,7 @@ export interface HomeImpact extends Struct.ComponentSchema {
     menteesInCurrentCycle: Schema.Attribute.Integer;
     mentorsTrained: Schema.Attribute.Integer;
     totalCyclesCompleted: Schema.Attribute.Integer;
-    totalMentoringHours: Schema.Attribute.Decimal;
+    totalMentoringHours: Schema.Attribute.Integer;
   };
 }
 

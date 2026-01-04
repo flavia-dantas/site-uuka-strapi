@@ -12,7 +12,7 @@
       "type": "integer"
     },
     "totalMentoringHours": {
-      "type": "decimal"
+      "type": "integer"
     },
     "totalCyclesCompleted": {
       "type": "integer"
