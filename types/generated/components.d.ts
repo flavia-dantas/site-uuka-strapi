@@ -8,10 +8,6 @@ export interface HomeAbout extends Struct.ComponentSchema {
   attributes: {
     imageHero: Schema.Attribute.Component<'home.image-hero', true>;
     impact: Schema.Attribute.Component<'home.impact', false>;
-    MissionVisionValues: Schema.Attribute.Component<
-      'home.mission-vision-values',
-      true
-    >;
     Schedule: Schema.Attribute.Component<'home.schedule', false>;
   };
 }

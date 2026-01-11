@@ -10,11 +10,6 @@
       "component": "home.image-hero",
       "repeatable": true
     },
-    "MissionVisionValues": {
-      "type": "component",
-      "component": "home.mission-vision-values",
-      "repeatable": true
-    },
     "Schedule": {
       "type": "component",
       "component": "home.schedule",
