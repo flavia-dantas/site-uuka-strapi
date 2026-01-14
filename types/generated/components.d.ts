@@ -92,19 +92,10 @@ export interface HomeLeadershipCard extends Struct.ComponentSchema {
   };
   attributes: {
     isColor: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    linkedin: Schema.Attribute.String;
     name: Schema.Attribute.String;
     photo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     position: Schema.Attribute.String;
-  };
-}
-
-export interface HomeMissionVisionValues extends Struct.ComponentSchema {
-  collectionName: 'components_home_mission_vision_values';
-  info: {
-    displayName: 'MissionVisionValues';
-  };
-  attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -190,7 +181,6 @@ declare module '@strapi/strapi' {
       'home.impact': HomeImpact;
       'home.leadership': HomeLeadership;
       'home.leadership-card': HomeLeadershipCard;
-      'home.mission-vision-values': HomeMissionVisionValues;
       'home.partnerships': HomePartnerships;
       'home.schedule': HomeSchedule;
       'home.supporters': HomeSupporters;

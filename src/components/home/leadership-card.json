@@ -24,6 +24,9 @@
     "isColor": {
       "type": "boolean",
       "default": false
+    },
+    "linkedin": {
+      "type": "string"
     }
   },
   "config": {}
