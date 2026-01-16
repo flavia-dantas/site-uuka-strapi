@@ -64,7 +64,6 @@ export interface HomeImpact extends Struct.ComponentSchema {
     displayName: 'Impact';
   };
   attributes: {
-    currentCycleNumber: Schema.Attribute.Integer;
     impactMapImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -157,15 +156,6 @@ export interface HomeTestimonialsCard extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     name: Schema.Attribute.String;
-    rating: Schema.Attribute.Integer &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 5;
-          min: 1;
-        },
-        number
-      > &
-      Schema.Attribute.DefaultTo<5>;
     role: Schema.Attribute.Enumeration<['Mentor', 'Mentee']>;
   };
 }
