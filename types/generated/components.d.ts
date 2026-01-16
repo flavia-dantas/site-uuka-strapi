@@ -64,7 +64,6 @@ export interface HomeImpact extends Struct.ComponentSchema {
     displayName: 'Impact';
   };
   attributes: {
-    currentCycleNumber: Schema.Attribute.Integer;
     impactMapImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

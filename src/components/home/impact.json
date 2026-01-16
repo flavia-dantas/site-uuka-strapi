@@ -26,9 +26,6 @@
         "videos",
         "audios"
       ]
-    },
-    "currentCycleNumber": {
-      "type": "integer"
     }
   },
   "config": {}
